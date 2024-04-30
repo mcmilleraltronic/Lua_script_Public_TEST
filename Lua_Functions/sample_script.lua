@@ -19,10 +19,6 @@ for t = 1,NumTerm do
       if not r2 then r2 = 0 end
       if not r3 then r3 = 0 end
       if not r4 then r4 = 0 end
-      set_modbus(2000 + (3200 * (t-1)) + ((c-1) * 100),r1,4,node)
-      set_modbus(2001 + (3200 * (t-1)) + ((c-1) * 100),r2,4,node)
-      set_modbus(2002 + (3200 * (t-1)) + ((c-1) * 100),r3,4,node)
-      set_modbus(2003 + (3200 * (t-1)) + ((c-1) * 100),r4,4,node)
     end
   end
 end
